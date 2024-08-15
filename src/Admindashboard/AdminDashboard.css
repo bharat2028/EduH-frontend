@@ -1,0 +1,292 @@
+/* AdminDashboard.css */
+
+/* Import a stylish font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Basic reset and styling */
+.as {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+.navbar {
+    background-color: #2c3e50; /* Dark background for navbar */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 100px;
+}
+
+.navbar .logo h2 {
+    margin-left: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.navbar .logo h4 {
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.navbar .nav-link {
+    display: flex;
+    padding-left: 450px;
+    align-items: center;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #1e90ff; /* Bright blue on hover */
+}
+/* Profile styling */
+.profile {
+    display: flex;
+    align-items: center;
+    position:fixed;
+     /* Increased padding for better spacing */
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3);
+    margin-left: 2px; /* Align profile section to the right */
+}
+.logout-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+.avatar {
+    background-color: red; /* Bright color for avatar */
+    border-radius: 50%;
+    padding: 15px; /* Increased padding for larger avatar */
+    align-items:end;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px; /* Increased size of the avatar text */
+    margin-right: 15px;
+}
+
+.username {
+    font-size: 1.2rem; /* Increased font size for username */
+    margin-right: 15px;
+}
+
+.profile-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #b7adad;
+    color: #333;
+    padding: 20px; /* Increased padding for dropdown */
+    box-shadow: 0 4px 4px rgba(245, 239, 239, 0.2);
+    border-radius: 25px;
+    top: 60px; /* Adjusted top position */
+    z-index: 2;
+    min-width: 70px; /* Increased width for dropdown */
+}
+
+.profile:hover .profile-dropdown {
+    display: list-item;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.profile-email {
+    margin-bottom: 20px; /* Increased margin for better spacing */
+    font-size: 1rem; /* Increased font size for email */
+}
+
+.settings-btn, .logout-btn {
+    
+    color: #f3eded;
+    size: 50px;
+    border: none;
+    padding: 15px; /* Increased padding for larger buttons */
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px; /* Increased font size */
+    margin: 10px 0; /* Increased margin for spacing */
+    display:inline;
+    align-items: center;
+}
+
+.settings-btn:hover, .logout-btn:hover {
+    background-color: #555;
+}
+
+.settings-btn i, .logout-btn i {
+    margin-right: 10px; /* Increased margin for icons */
+}
+
+.logout-btn {
+    margin-top: 5px; /* Increased margin for logout button */
+    background-color: #ffffff00;
+    color: #fff;
+    border: none;
+    padding: 20px 15px; /* Increased padding for logout button */
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem; /* Increased font size */
+}
+
+.logout-btn:hover {
+    background-color: #e60000;
+}
+
+.bar-chart {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Content section styling */
+.content {
+    margin-top: 60px; /* Offset by the header height */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+}
+
+/* Container styling for different sections */
+.institutions, .top-performers, .bar-chart, .pie-chart {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px; /* Slightly increased border radius for a softer look */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* More pronounced shadow for depth */
+    width: 90%; /* Consistent width */
+    margin: 20px auto; /* Space between sections */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Header styling within each section */
+.institutions h2, .top-performers h2, .bar-chart h2, .pie-chart h2 {
+    margin: 0 0 15px 0; /* Margin below heading for spacing */
+    font-size: 1.75rem; /* Slightly larger heading font size */
+    color: #333; /* Darker color for better readability */
+}
+
+/* List styling for institutions and top performers */
+.institutions ul, .top-performers ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Remove default margin */
+}
+
+.institutions ul li, .top-performers ul li {
+    margin: 10px 0; /* Increase space between list items */
+    padding: 10px; /* Add padding for better spacing */
+    border-bottom: 1px solid #ddd; /* Light border between items */
+    color: #555; /* Slightly darker text color for contrast */
+}
+
+/* Hover effect for list items */
+.institutions ul li:hover, .top-performers ul li:hover {
+    background-color: #f9f9f9; /* Subtle background color change on hover */
+    border-color: #ccc; /* Change border color on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Styling for charts */
+.bar-chart, .pie-chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%; /* Consistent width */
+    margin: 20px auto; /* Space between sections */
+    padding: 20px;
+    /* background: linear-gradient(to top left, #f9f9f9, #fff); Gradient background */
+    border: 1px solid #e0e0e0; /* Light border for distinction */
+    border-radius: 10px; /* Consistent border radius */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Depth shadow */
+}
+
+.bar-chart canvas, .pie-chart canvas {
+    max-width: 100%;
+    background-color: white;
+    max-height: 400px; /* Ensure charts are responsive */
+}
+
+/* Optional: Add hover effect to sections */
+.institutions:hover, .top-performers:hover, .bar-chart:hover, .pie-chart:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.institutions {
+    background-color: white; /* Gradient background for visual appeal */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    margin: 20px auto;
+    font-family: 'Roboto', sans-serif; /* Apply the new font */
+}
+
+/* Styling for bar chart */
+.bar-chart, .pie-chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%; /* Increased width */
+    margin: 0 auto;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.pie-chart {
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.bar-chart {
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pie-chart h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.pie-chart canvas {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+

@@ -1,0 +1,189 @@
+/* Import a stylish font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Reset body and html margins and paddings, set height */
+.body1 {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #000428, #004e92); /* Stunning gradient background */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevents scroll bars */
+}
+
+/* Container for centering content */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px); /* Blurred background for a glassy effect */
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7); /* Enhanced shadow for depth */
+    animation: fadeIn 2s ease-in-out; /* Smooth fade-in animation */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Styling for the header */
+.heade {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Styling for the heading */
+.heading {
+    font-size: 4rem; /* Larger font size for prominence */
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 8px 16px rgba(0, 0, 0, 0.8), 0 0 20px #ffffff; /* Glowing effect */
+    animation: glow 2s infinite alternate; /* Glowing animation */
+}
+
+/* Glowing animation */
+@keyframes glow {
+    from {
+        text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6), 0 0 10px #ffffff;
+    }
+    to {
+        text-shadow: 0 8px 16px rgba(0, 0, 0, 0.8), 0 0 20px #ffffff;
+    }
+}
+
+/* Styling for the slogan */
+.slogan {
+    font-size: 2rem; /* Larger font size for prominence */
+    color: #f8f8f8;
+    margin: 10px 0 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+    text-shadow: 0 6px 12px rgba(0, 0, 0, 0.7), 0 0 25px #ffffff;
+    animation: pulse 3s infinite; /* Subtle pulse animation */
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Styling for additional information */
+.info {
+    font-size: 1.25rem;
+    color: #f0f0f0;
+    margin: 20px 0;
+    line-height: 1.6;
+    max-width: 700px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Deeper shadow for better emphasis */
+}
+
+/* Centering container with background image and gradient overlay */
+.cen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+/* Styling for inner container */
+.top {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Deeper shadow for better emphasis */
+    text-shadow: 0 8px 16px rgba(0, 0, 0, 0.7), 0 0 25px #ffffff;
+    animation: float 6s ease-in-out infinite; /* Subtle floating animation */
+}
+
+/* Floating animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Styling for buttons */
+.Adm {
+    margin: 15px;
+    font-size: 20px;
+    padding: 15px 40px;
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Button hover effect */
+.Adm:hover {
+    background-color: #36383a;
+    color: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* Add glowing borders to buttons */
+.Adm::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    background: linear-gradient(45deg, #ff00cc, #3333ff);
+    background-size: 200% 200%;
+    z-index: -1;
+    transition: all 0.001s ease;
+}
+
+/* Animate glowing borders on hover */
+.Adm:hover::before {
+    background-position: 100% 0;
+}

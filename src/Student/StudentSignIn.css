@@ -1,0 +1,115 @@
+/* StudentSignIn.css */
+
+/* Import a stylish font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Reset body and html margins and paddings, set height */
+.body3{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif; /* Apply the stylish font */
+    background: linear-gradient(135deg, #FF6F61, #6B5B95); /* Gradient background for a vibrant look */
+    background-size: 400% 400%;
+    animation: mosaicBackground 10s ease infinite; /* Animation for background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mosaic animation */
+@keyframes mosaicBackground {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+/* Centering container for sign-in box */
+.signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styling for the sign-in box */
+.signin-box {
+    background: #2e2e2e; /* Dark background for the box */
+    padding: 30px 40px; /* Padding inside the box */
+    border-radius: 30px; /* Rounded corners */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6); /* Shadow for a floating effect */
+    text-align: center; /* Center text inside the box */
+    color: #fff; /* White text color */
+    max-width: 600px; /* Increased maximum width */
+    width: 100%; /* Full width up to the maximum */
+    border: 1px solid #444; /* Slightly lighter dark border */
+    background: linear-gradient(145deg, #3a3a3a, #1f1f1f); /* Colorful gradient background */
+}
+
+/* Styling for the form heading */
+.signin-box h2 {
+    margin-bottom: 20px; /* Space below the heading */
+    color: #fff; /* White color for text */
+    font-weight: 600; /* Bold font weight */
+    font-size: 26px; /* Larger font size */
+}
+
+/* Styling for the input groups */
+.input-group {
+    margin-bottom: 15px; /* Space between input groups */
+    text-align: left; /* Align labels and inputs to the left */
+}
+
+/* Styling for the labels */
+.input-group label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space below labels */
+    color: #ddd; /* Light gray color for text */
+    font-size: 15px; /* Medium font size */
+}
+
+/* Styling for the input fields */
+.input-group input {
+    width: 100%; /* Full width input fields */
+    padding: 12px; /* Padding inside the fields */
+    border: 1px solid #666; /* Darker border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #333; /* Dark background color for input fields */
+    color: #fff; /* White text color */
+    font-size: 16px; /* Medium font size */
+}
+
+/* Styling for the button */
+.signin-btn {
+    width: 50%; /* Full width button */
+    padding: 8px 0; /* Reduced padding inside the button */
+    border: none; /* Remove default border */
+    border-radius: 6px; /* Slightly smaller border radius */
+    color: #fff; /* White text color */
+    background-color: #ff6f61; /* Vibrant orange background color */
+    font-size: 16px; /* Smaller font size for the button */
+    font-weight: 600; /* Bold font weight */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.001ms ease; /* Smooth background color transition */
+}
+
+.signin-btn:hover {
+    background-color: #e55d50; /* Darker orange on hover */
+}
+
+/* Styling for the additional information section */
+.additional-info {
+    margin-top: 20px; /* Space above the additional info */
+    font-size: 14px; /* Medium font size */
+    color: #ddd; /* Light gray color for text */
+}
+
+/* Styling for links */
+.additional-info a {
+    color: #ff6f61; /* Vibrant orange color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.additional-info a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

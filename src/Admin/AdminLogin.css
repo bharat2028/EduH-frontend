@@ -1,0 +1,87 @@
+/* Import a stylish font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Reset body and html margins and paddings, set height */
+.body5{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif; /* Apply the stylish font */
+    background: linear-gradient(135deg, rgba(255, 111, 97, 0.7), rgba(220, 227, 91, 0.7), rgba(69, 170, 242, 0.7), rgba(61, 78, 95, 0.7)); /* Multi-color gradient background with transparency */
+    background-size: 400% 400%; /* Make the gradient cover the entire screen */
+    animation: gradientAnimation 8s ease infinite; /* Faster animation */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Keyframes for gradient animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+/* Centering container for login box */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styling for the login box */
+.login-box {
+    /* Semi-transparent white background */
+    padding: 40px 60px; /* Spacing inside the box */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    text-align: center; /* Center text inside the box */
+}
+
+/* Styling for the form heading */
+.login-box h2 {
+    margin-bottom: 20px; /* Space below the heading */
+    color: #333; /* Dark gray color for text */
+    font-weight: 600; /* Bold font weight */
+}
+
+/* Styling for the input groups */
+.input-group {
+    margin-bottom: 20px; /* Space between input groups */
+    text-align: left; /* Align labels and inputs to the left */
+}
+
+/* Styling for the labels */
+.input-group label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space below labels */
+    color: #333; /* Dark gray color for text */
+}
+
+/* Styling for the input fields */
+.input-group input {
+    width: 100%; /* Full width input fields */
+    padding: 10px; /* Padding inside the fields */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Medium font size */
+}
+
+/* Styling for the login button */
+.login-btn {
+    width: 100%; /* Full width button */
+    padding: 10px 0; /* Padding inside the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #b53f3f; /* Primary color */
+    color: white; /* White text color */
+    font-size: 18px; /* Larger font size for the button */
+    font-weight: 600; /* Bold font weight */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.01ms ease; /* Smooth background color transition */
+}
+
+.login-btn:hover {
+    background-color: #303f9f; /* Darker color on hover */
+}

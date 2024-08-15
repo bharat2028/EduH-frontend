@@ -1,0 +1,33 @@
+.contact {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.contact-us h2 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+.contact-info p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    color:black;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #007bff; /* Adjust hover color as needed */
+}
